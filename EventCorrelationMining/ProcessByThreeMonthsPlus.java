@@ -28,7 +28,8 @@ public class ProcessByThreeMonthsPlus {
 	/**
 	 * start the tensor processing?
 	 */
-	
+    public static String homeDir = "/home/XXX" ; //Gdelt downloaded parent directory	
+    public static String  gdeltDir = "gdelt"; //gdelt directory name
 	public static boolean createIndex = false;
 	public static boolean openCorrelated = true;
 	public static boolean openGraph = false;
@@ -54,9 +55,9 @@ public class ProcessByThreeMonthsPlus {
 				EventGraphMining testGM = new EventGraphMining();
 				
 				//home dir
-				String homeDir = "/home/eric/trace" ;
+				String homeDir = homeDir;
 						//gdelt dir
-				String  gdeltDir = "gdelt";
+				String  gdeltDir = gdeltDir;
 				//time
 				String[] first =null;
 				String[] last =null;
@@ -284,9 +285,9 @@ public class ProcessByThreeMonthsPlus {
 		EventGraphMining testGM = new EventGraphMining();
 		
 		//home dir
-				String homeDir = "/home/eric/trace" ;
+				String homeDir = homeDir; // "/home/eric/trace" ;
 				//gdelt dir
-				String  gdeltDir = "gdelt";
+				String  gdeltDir = gdeltDir;//"gdelt";
 				
 				//date pair
 				int datePairLen = 2*ETLDirApp.DateEntryNum;
